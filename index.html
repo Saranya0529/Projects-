@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .product-card h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ff6983;
+        }
+
+        .product-card .price {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .product-card .options {
+            margin-bottom: 20px;
+        }
+
+        .product-card .options .unit-radio-section {
+            display: flex;
+            margin-bottom: 10px;
+            justify-content: space-between;
+            border: 1px solid grey;
+            padding: 10px;
+        }
+
+        .product-card .options .unit-two {
+            margin-bottom: 10px;
+            justify-content: space-between;
+            border: 1px solid grey;
+            padding: 10px;
+        }
+
+        .product-card .options .unit-two .unit-radio-col h4,
+        .product-card .options .unit-two p,
+        .product-card .options .unit-two h3 {
+            margin: 0px;
+            text-align: left;
+        }
+
+        .product-card .options .unit-radio-section .unit-radio-col {
+            display: flex;
+            align-items: center;
+        }
+
+        .product-card .options .unit-radio-section .unit-radio-col span {
+            background-color: #ff6983;
+            color: white;
+            padding: 2px;
+            margin-left: 5px;
+            font-size: 10px;
+        }
+
+        .product-card .options .unit-two span {
+            background-color: #ff6983;
+            color: white;
+            padding: 2px;
+            margin-left: 5px;
+            font-size: 10px;
+        }
+
+        .product-card .options .unit-two:hover {
+            background-color: #de9aab;
+            border: 1px solid #ff6983;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card .options .unit-two .size-section button {
+            background: transparent;
+            margin-bottom: 5px;
+            border: 1px solid;
+            border-color: grey;
+            margin-left: 5px;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .justify-content-start {
+            justify-content: start;
+        }
+
+        .product-card .options .unit-radio-section .unit-radio-col h4,
+        .product-card .options .unit-radio-section p,
+        .product-card .options .unit-radio-section h3 {
+            margin: 0px;
+            text-align: left;
+        }
+
+        .product-card .options .unit-radio-col {
+            display: flex;
+        }
+
+        .product-card .options .unit-radio-section:hover {
+            background-color: #de9aab;
+            border: 1px solid #ff6983;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card .options .unit-radio-section .unit-radio-col h4 {
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        .product-card .options .unit-radio-section p {
+            color: #b7b1b2;
+            font-size: 12px;
+            text-decoration: line-through;
+        }
+
+        .product-card .total {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .product-card .add-to-cart {
+            background-color: #ff6983;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .product-card .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-card .footer h3 {
+            margin: 0px;
+            font-size: 14px;
+        }
+
+        .product-card .footer h6 {
+            font-size: 12px;
+            margin: 0px;
+            color: #ff6983;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product-card">
+        <h1>YAY! It's BOGO</h1>
+        <div class="price">1 Unit - $10.00 USD</div>
+        <div class="options">
+            <div class="unit-radio-section">
+                <div class="unit-radio-col">
+                    <div>
+                        <input type="radio" name="size" value="1">
+                    </div>
+                    <div>
+                        <h3>1 unit<span>10% off</span></h3>
+                        <h4>Standard Price</h4>
+                    </div>
+                </div>
+                <div>
+                    <h3> $10.00 USD</h3>
+                    <p>$24.00 USD</p>
+                </div>
+            </div>
+            <div class="unit-two">
+                <div class="d-flex justify-content-between ">
+                    <div class="unit-radio-col">
+                        <div>
+                            <input type="radio" name="size" value="1">
+                        </div>
+                        <div>
+                            <h3>2 unit<span>20% off</span></h3>
+                        </div>
+                    </div>
+                    <div>
+                        <h3> $10.00 USD</h3>
+                        <p>$24.00 USD</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start">
+                    <div class="size-section">
+                        <h4>Size</h4>
+                        <div>
+                            #1<button className="dropdown-button">
+                                S ▼
+                            </button>
+                        </div>
+                        <div>
+                            #2<button className="dropdown-button">
+                                S ▼
+                            </button>
+                        </div>
+                    </div>
+                    <div class="size-section">
+                        <h4>Colour</h4>
+                        <div>
+                            #1<button className="dropdown-button">
+                                S ▼
+                            </button>
+                        </div>
+                        <div>
+                            #2<button className="dropdown-button">
+                                S ▼
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-radio-section">
+                <div class="unit-radio-col">
+                    <div>
+                        <input type="radio" name="size" value="1">
+                    </div>
+                    <div>
+                        <h3>3 unit<span>30% off</span></h3>
+                    </div>
+                </div>
+                <div>
+                    <h3> $10.00 USD</h3>
+                    <p>$24.00 USD</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h6>
+                Free Delivery
+            </h6>
+            <h3 class="total">Total: $18.00 USD</h3>
+        </div>
+        <button class="add-to-cart">+ Add to Cart</button>
+    </div>
+</body>
+
+</html>
